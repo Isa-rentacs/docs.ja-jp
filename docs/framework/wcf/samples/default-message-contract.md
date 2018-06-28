@@ -31,7 +31,7 @@ public interface ICalculator
 }  
 ```  
   
- カスタム メッセージ `MyMessage` は、<xref:System.ServiceModel.MessageContractAttribute>、<xref:System.ServiceModel.MessageHeaderAttribute>、および <xref:System.ServiceModel.MessageBodyMemberAttribute> 属性が付いたクラスで定義されます。 このサンプルで使用するのは 3 番目のコンストラクタだけです。 メッセージ コントラクトを使用すると、SOAP メッセージを完全に制御できます。 このサンプルでは、<xref:System.ServiceModel.MessageHeaderAttribute> 属性を使用して SOAP ヘッダーに `Operation` を格納します。 オペランド `N1`、`N2`、および `Result` は SOAP 本文内に示されます。これらのオペランドには <xref:System.ServiceModel.MessageBodyMemberAttribute> 属性が適用されているためです。  
+ カスタム メッセージ `MyMessage` は、<xref:System.ServiceModel.MessageContractAttribute>、<xref:System.ServiceModel.MessageHeaderAttribute>、および <xref:System.ServiceModel.MessageBodyMemberAttribute> 属性が付いたクラスで定義されます。 このサンプルで使用するのは 3 番目のコンストラクターけです。 メッセージ コントラクトを使用すると、SOAP メッセージを完全に制御できます。 このサンプルでは、<xref:System.ServiceModel.MessageHeaderAttribute> 属性を使用して SOAP ヘッダーに `Operation` を格納します。 オペランド `N1`、`N2`、および `Result` は SOAP 本文内に示されます。これらのオペランドには <xref:System.ServiceModel.MessageBodyMemberAttribute> 属性が適用されているためです。  
   
 ```  
 [MessageContract]  

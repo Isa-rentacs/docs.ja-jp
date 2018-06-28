@@ -172,7 +172,7 @@ for (int i = 0; i < args.Length; i++)
 ## <a name="the-custom-wsdl-importer"></a>カスタム WSDL インポータ  
  カスタム <xref:System.ServiceModel.Description.IWsdlImportExtension> オブジェクトの `WsdlDocumentationImporter` は、<xref:System.ServiceModel.Description.IContractBehavior> と <xref:System.ServiceModel.Description.IOperationBehavior> も実装しています。これらはインポートされた ServiceEndpoints、<xref:System.ServiceModel.Description.IServiceContractGenerationExtension>、および <xref:System.ServiceModel.Description.IOperationContractGenerationExtension> に追加され、コントラクトまたは操作コードが作成されるときにコード生成を変更するために呼び出されます。  
   
- サンプルでは、最初に <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> メソッドで、WSDL 注釈がコントラクト レベルまたは操作レベルのどちらにあるかを判断し、適切なスコープで WDSL 注釈自体を動作として追加します。その際、インポートされた注釈テキストをコンストラクタに渡します。  
+ サンプルでは、最初に <xref:System.ServiceModel.Description.IWsdlImportExtension.ImportContract%28System.ServiceModel.Description.WsdlImporter%2CSystem.ServiceModel.Description.WsdlContractConversionContext%29> メソッドで、WSDL 注釈がコントラクト レベルまたは操作レベルのどちらにあるかを判断し、適切なスコープで WDSL 注釈自体を動作として追加します。その際、インポートされた注釈テキストをコンストラクター渡します。  
   
 ```  
 public void ImportContract(WsdlImporter importer, WsdlContractConversionContext context)  

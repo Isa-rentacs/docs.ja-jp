@@ -18,7 +18,7 @@ ms.locfileid: "33507877"
   
  メッセージをメソッドにディスパッチする方法を変更するために、このサンプルでは <xref:System.ServiceModel.Dispatcher.IDispatchOperationSelector> 拡張インターフェイスを `DispatchByBodyElementOperationSelector` に実装します。 このクラスは、メッセージ本文の最初の要素に基づいて操作を選択します。  
   
- クラス コンストラクタには、`XmlQualifiedName` と文字列のペアが記録されたディクショナリが必要です。この修飾名は SOAP 本文の最初の子の名前を示し、文字列は該当する操作名を示します。 `defaultOperationName` は、このディクショナリで照合できないすべてのメッセージを受信する操作の名前です。  
+ クラス コンストラクターは、`XmlQualifiedName` と文字列のペアが記録されたディクショナリが必要です。この修飾名は SOAP 本文の最初の子の名前を示し、文字列は該当する操作名を示します。 `defaultOperationName` は、このディクショナリで照合できないすべてのメッセージを受信する操作の名前です。  
   
 ```  
 class DispatchByBodyElementOperationSelector : IDispatchOperationSelector  

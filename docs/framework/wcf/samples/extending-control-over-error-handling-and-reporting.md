@@ -49,7 +49,7 @@ public class CalculatorErrorHandler : IErrorHandler
     }  
 ```  
   
- `ErrorBehaviorAttribute` は、エラー ハンドラをサービスに登録する機構として存在します。 この属性は、単一の型パラメーターを受け取ります。 この型は <xref:System.ServiceModel.Dispatcher.IErrorHandler> インターフェイスを実装し、空のパブリック コンストラクタを含む必要があります。 この属性は、そのエラー ハンドラの型のインスタンスをインスタンス化し、サービスにインストールします。 これを行うには <xref:System.ServiceModel.Description.IServiceBehavior> インターフェイスを実装し、次に <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> メソッドを使用してエラー ハンドラのインスタンスをサービスに追加します。  
+ `ErrorBehaviorAttribute` は、エラー ハンドラをサービスに登録する機構として存在します。 この属性は、単一の型パラメーターを受け取ります。 この型は <xref:System.ServiceModel.Dispatcher.IErrorHandler> インターフェイスを実装し、空のパブリック コンストラクター含む必要があります。 この属性は、そのエラー ハンドラの型のインスタンスをインスタンス化し、サービスにインストールします。 これを行うには <xref:System.ServiceModel.Description.IServiceBehavior> インターフェイスを実装し、次に <xref:System.ServiceModel.Description.IServiceBehavior.ApplyDispatchBehavior%2A> メソッドを使用してエラー ハンドラのインスタンスをサービスに追加します。  
   
 ```  
 // This attribute can be used to install a custom error handler for a service.  

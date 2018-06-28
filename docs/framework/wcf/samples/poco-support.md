@@ -10,7 +10,7 @@ ms.lasthandoff: 05/04/2018
 ms.locfileid: "33501987"
 ---
 # <a name="poco-support"></a>POCO サポート
-このサンプルでは、マークされていない型 (シリアル化属性が適用されていない型で、POCO (Plain Old CLR Object) 型と呼ばれる場合もあります) のシリアル化のサポートについて説明します。 <xref:System.Runtime.Serialization.DataContractSerializer> では、既定のコンストラクタを持つすべてのマークされていないパブリック型について、データ コントラクトを推測します。 データ コントラクトを使用すると、サービスと構造化データをやり取りできます。 マークされていない型の詳細については、次を参照してください。[シリアル化できる型](../../../../docs/framework/wcf/feature-details/serializable-types.md)です。  
+このサンプルでは、マークされていない型 (シリアル化属性が適用されていない型で、POCO (Plain Old CLR Object) 型と呼ばれる場合もあります) のシリアル化のサポートについて説明します。 <xref:System.Runtime.Serialization.DataContractSerializer> では、既定のコンストラクター持つすべてのマークされていないパブリック型について、データ コントラクトを推測します。 データ コントラクトを使用すると、サービスと構造化データをやり取りできます。 マークされていない型の詳細については、次を参照してください。[シリアル化できる型](../../../../docs/framework/wcf/feature-details/serializable-types.md)です。  
   
  このサンプルがに基づいて、[作業の開始](../../../../docs/framework/wcf/samples/getting-started-sample.md)がプリミティブ数値型ではなく複素数を使用します。 似ていますも、[基本的なデータ コントラクト](../../../../docs/framework/wcf/samples/basic-data-contract.md)サンプルは、点を除いて、<xref:System.Runtime.Serialization.DataContractAttribute>と<xref:System.Runtime.Serialization.DataMemberAttribute>属性は使用されません。  
   

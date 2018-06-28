@@ -110,7 +110,7 @@ XmlDictionaryReader reader = channel.GetMemberProfile().GetReaderAtBodyContents(
 JsonObject json = new JsonObject(reader);  
 ```  
   
- `JsonObject` コンストラクタは、 <xref:System.Xml.XmlDictionaryReader>メソッドを使用して取得される <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> を受け取ります。 リーダーには、クライアントによって受信された JSON メッセージの XML 表現が含まれています。 詳細については、トピックを参照してください。[マッピングの間で JSON および XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md)です。  
+ `JsonObject` コンストラクター、 <xref:System.Xml.XmlDictionaryReader>メソッドを使用して取得される <xref:System.ServiceModel.Channels.Message.GetReaderAtBodyContents%2A> を受け取ります。 リーダーには、クライアントによって受信された JSON メッセージの XML 表現が含まれています。 詳細については、トピックを参照してください。[マッピングの間で JSON および XML](../../../../docs/framework/wcf/feature-details/mapping-between-json-and-xml.md)です。  
   
  このプログラムの出力は、次のようになります。  
   
